@@ -1,9 +1,7 @@
-const myJson = require ("./animals.json")
-/* const pigs = myJson.pigs *= 4
-const cows = myJson.cows *= 4
-const chickens = myJson.chickens *= 2
-const totalLegs = pigs+cows+chickens;
-console.log(totalLegs) */
+const animal = require ("./animals.json")
 
-const totalLegs = (myJson.chickens*2)+(myJson.cows*4)+(myJson.pigs*4)
-console.log(totalLegs)
+function animals()
+{
+    return animal.pigs * 4 + animal.cows * 4 + animal.chickens * 2;
+}
+console.log(animals())
